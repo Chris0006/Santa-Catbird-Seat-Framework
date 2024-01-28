@@ -142,7 +142,7 @@ def receive():
 
 def mail_admin(message):
     try:
-        WEBHOOK = "https://discord.com/api/webhooks/921435574357876776/96Pbi7Ux8RzV6l7YMr3g5m_GI2R3ejRELNZCGafS2cNOcbTQ8_ZQkVrLfmgPKehIomAT"
+        WEBHOOK = "paste your discord web hook here"
         webhook = DiscordWebhook(url=WEBHOOK)
         embed = DiscordEmbed(title=f"=====  SantaSh-Server  =====", description=message)
         webhook.add_embed(embed)    
